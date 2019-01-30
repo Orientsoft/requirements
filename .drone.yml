@@ -1,0 +1,9 @@
+kind: pipeline
+name: jupyterlab
+
+steps:
+- name: jupyterlab
+  image: jupyter/scipy-notebook
+  commands:
+  - pip install -r requirements.txt
+  - pytest
